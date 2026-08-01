@@ -1,0 +1,19 @@
+/**
+ * Portfolio Styles - Main Import File
+ * Combines all CSS files in proper order
+ */
+
+/* Base styles and theme variables */
+@import './base.css';
+
+/* Reusable component styles */
+@import './components.css';
+
+/* Navigation and header styles */
+@import './navigation.css';
+
+/* Section styles (Hero, About, Experience, Projects, Skills, Contact) */
+@import './sections.css';
+
+/* Animations and transitions */
+@import './animations.css';

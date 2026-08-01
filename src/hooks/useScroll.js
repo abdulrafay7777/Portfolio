@@ -1,0 +1,17 @@
+/**
+ * useScroll Hook
+ * Tracks scroll position for UI state changes
+ */
+import { useEffect, useState } from "react";
+
+export function useScroll(threshold = 24) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > threshold);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [threshold]);
+
+  return scrolled;
+}
