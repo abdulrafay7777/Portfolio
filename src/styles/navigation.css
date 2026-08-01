@@ -145,20 +145,32 @@
   font-weight: 600;
   color: var(--text-muted);
   background: transparent;
-  border: 1px solid transparent;
-  border-radius: 12px;
+  border: none;
   cursor: pointer;
-  padding: 12px 24px;
-  transition: all 0.2s ease;
-  width: 100%;
-  max-width: 280px;
+  padding: 8px 16px;
+  position: relative;
+  transition: color 0.3s ease;
+  width: fit-content;
   text-align: center;
+}
+
+.mobile-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--cyan);
+  transition: width 0.3s ease;
 }
 
 .mobile-nav-link:hover, .mobile-nav-link.active {
   color: var(--cyan);
-  background: rgba(94, 234, 212, 0.05);
-  border-color: rgba(94, 234, 212, 0.1);
+}
+
+.mobile-nav-link.active::after {
+  width: 100%;
 }
 
 /* ========== RESPONSIVE ========== */
