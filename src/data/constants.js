@@ -11,7 +11,7 @@ export const CONTACT = {
   linkedin: "abdulrafaydev",
 };
 
-export const NAV_LINKS = ["About", "Experience", "Education", "Projects", "Skills", "Contact"];
+export const NAV_LINKS = ["About", "Experience", "Education", "Projects", "Achievements", "Skills", "Contact"];
 
 export const EXPERIENCE = [
   {
@@ -93,41 +93,65 @@ export const PROJECTS = [
     tag: "Final Year Project",
     desc: "Legacy signature-based defenses leave enterprises blind. Argus is a next-gen EDR platform that outsmarts attackers using graph ML and Sysmon telemetry. It autonomously isolates threats in real time while streaming live attack chains to an interactive SOC dashboard.",
     stack: ["Python", "FastAPI", "React.js", "PostgreSQL", "Sysmon", "D3.js"],
+    github: "https://github.com/hayyanlone3/Argus",
   },
   {
     name: "Slack-Integrated Multi-Agent AI Consultant",
     tag: "Multi-Agent System",
     desc: "This multi-agent AI consultant sits directly in Slack, transforming raw discovery calls into polished, data-backed proposals in minutes. Powered by LangGraph and a hybrid RAG pipeline, it autonomously analyzes client needs and refines drafts through interactive feedback.",
     stack: ["Python", "LangChain", "LangGraph", "Groq", "Qdrant", "Sentence-Transformers"],
+    github: "https://github.com/abdulrafay7777/Slack-based-AI-assistant",
   },
   {
     name: "Multi-Agent Workspace Assistant",
     tag: "Autonomous Agents",
     desc: "This autonomous multi-agent assistant translates plain English into instant action. From executing complex web research to booking calendar meetings via GCP OAuth 2.0, it reasons through workflows at machine speed to multiply your daily productivity.",
     stack: ["Python", "LangChain", "LangGraph", "Apify", "GCP", "Google Calendar API"],
+    github: "https://github.com/abdulrafay7777/AI_Agent_LangGraph",
+  },
+];
+
+export const ACHIEVEMENTS = [
+  {
+    title: "AI Chatbot",
+    date: "Ongoing",
+    desc: "An intelligent, context-aware AI chatbot currently in active development. Designed to handle complex conversational flows and provide human-like assistance.",
+    link: "https://www.homoeointel.com/",
+    isLarge: true,
+    hoverBg: "rgba(99, 102, 241, 0.15)",
+    image: "/chatbot-dashboard.png"
+  },
+  {
+    title: "Modern Web Application",
+    date: "Ongoing",
+    desc: "A full-stack web application being built from the ground up, focusing on a premium user experience, responsive design, and seamless integrations.",
+    link: "https://www.paksourceconnect.com/",
+    isLarge: true,
+    hoverBg: "rgba(16, 185, 129, 0.15)",
+    image: "/source-dashboard.png"
   },
 ];
 
 export const SKILLS = [
-  { 
-    label: "Languages", 
-    items: ["Python", "JavaScript", "SQL"] 
+  {
+    label: "Languages",
+    items: ["Python", "JavaScript", "SQL"]
   },
-  { 
-    label: "Frameworks & Libraries", 
-    items: ["PyTorch", "NumPy", "Pandas", "Matplotlib", "LangChain", "LangGraph", "FastAPI", "React.js"] 
+  {
+    label: "Frameworks & Libraries",
+    items: ["PyTorch", "NumPy", "Pandas", "Matplotlib", "LangChain", "LangGraph", "FastAPI", "React.js"]
   },
-  { 
-    label: "Databases", 
-    items: ["PostgreSQL", "MongoDB", "ChromaDB", "Qdrant"] 
+  {
+    label: "Databases",
+    items: ["PostgreSQL", "MongoDB", "ChromaDB", "Qdrant"]
   },
-  { 
-    label: "Cloud Platforms", 
-    items: ["GCP", "Vercel"] 
+  {
+    label: "Cloud Platforms",
+    items: ["GCP", "Vercel"]
   },
-  { 
-    label: "Developer Tools", 
-    items: ["Git", "GitHub", "VS Code", "Postman"] 
+  {
+    label: "Developer Tools",
+    items: ["Git", "GitHub", "VS Code", "Postman"]
   },
 ];
 

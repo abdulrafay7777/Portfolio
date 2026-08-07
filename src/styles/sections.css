@@ -697,6 +697,131 @@
   text-align: center;
 }
 
+/* ========== CACHELOGIC CARDS ========== */
+
+.cache-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cache-card {
+  position: relative;
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  background: var(--glass-bg);
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cache-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.cache-card.is-large {
+  grid-column: span 2;
+}
+
+.cache-card-visual {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.cache-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cache-card:hover .cache-image {
+  transform: scale(1.05);
+}
+
+.cache-card-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cache-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.cache-card-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+}
+
+.cache-card-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.cache-card-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+@media (min-width: 1025px) {
+  .cache-card.is-large {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .cache-card.is-large .cache-card-visual {
+    width: 55%;
+    height: auto;
+    min-height: 360px;
+    border-bottom: none;
+    border-right: 1px solid var(--glass-border);
+  }
+  .cache-card.is-large .cache-card-content {
+    width: 45%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cache-grid {
+    grid-template-columns: 1fr;
+  }
+  .cache-card.is-large {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cache-grid {
+    grid-template-columns: 1fr;
+  }
+  .cache-card.is-large {
+    grid-column: span 1;
+  }
+}
+
 /* ========== RESPONSIVE ========== */
 
 @media (max-width: 1024px) {

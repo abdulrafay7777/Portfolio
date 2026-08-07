@@ -6,6 +6,7 @@ import { SectionLabel } from "./SectionLabel";
 import { Tag } from "./Tag";
 import { PROJECTS } from "../data/constants";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 export function ProjectsSection() {
   const containerVariants = {
@@ -54,11 +55,16 @@ export function ProjectsSection() {
               <span className="project-tag">{p.tag}</span>
             </div>
             <p className="project-desc">{p.desc}</p>
-            <div className="tag-row">
+            <div className="tag-row" style={{ marginBottom: "20px" }}>
               {p.stack.map((s) => (
                 <Tag key={s}>{s}</Tag>
               ))}
             </div>
+            {p.github && (
+              <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ textDecoration: "none", width: "fit-content" }}>
+                GitHub <FaGithub size={16} />
+              </a>
+            )}
           </motion.div>
         ))}
       </motion.div>
