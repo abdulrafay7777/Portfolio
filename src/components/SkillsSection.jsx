@@ -35,7 +35,6 @@ export function SkillsSection() {
         }}
       >
         <SectionLabel>Skills</SectionLabel>
-        <h2 className="section-heading">The stack, grouped by what it's for</h2>
       </motion.div>
       
       <motion.div 

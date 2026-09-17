@@ -50,17 +50,17 @@ export function AboutSection() {
       >
         <SectionLabel>About</SectionLabel>
         <h2 className="section-heading">
-          Hi, I'm Abdul Rafay, a Computer Science graduate from Lahore Garrison University with a strong focus on algorithms, machine learning, and building reliable systems.
+          Hi, I'm Abdul Rafay, a Computer Science graduate from Lahore Garrison University with a strong focus on building solutions, and building reliable systems which create real world impact.
         </h2>
         <div className="about-content">
           <p className="about-text">
             I started with competitive programming and carried that rigor into research and software projects. That mindset shows up in how I approach correctness, complexity, and edge cases.
           </p>
           <p className="about-text">
-            Outside code, you'll usually find me solving a analytical, quantitative and duductive reasoning, working through a math problem, or tweaking my Neovim and tmux setup on Arch Linux.
+            Outside code, you'll usually find me solving a analytical, quantitative and duductive reasoning, working on AI solutions, or tweaking my backend design to be scalable.
           </p>
           <p className="about-text">
-            I'm currently open to AI engineering roles, research opportunities, and projects that involve strong problem solving.
+            I'm currently open to Software Engineering, AI Engineer roles, opportunities, and projects that involve strong problem solving.
           </p>
         </div>
       </motion.div>
