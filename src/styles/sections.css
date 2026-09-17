@@ -280,8 +280,16 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 40px;
-  padding: 32px 0;
+  padding: 32px 20px;
   border-top: 1px solid var(--glass-border);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 8px;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(94, 234, 212, 0.3);
+  transform: translateX(10px);
 }
 
 .timeline-item:last-child {
@@ -369,6 +377,8 @@
 .education-item:hover {
   border-color: var(--glass-border-hover);
   background: rgba(255,255,255,0.03);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(94, 234, 212, 0.15);
 }
 
 .education-icon {

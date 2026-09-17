@@ -109,6 +109,13 @@ export const PROJECTS = [
     stack: ["Python", "LangChain", "LangGraph", "Apify", "GCP", "Google Calendar API"],
     github: "https://github.com/abdulrafay7777/AI_Agent_LangGraph",
   },
+  {
+    name: "Real-time Chat API",
+    tag: "Real-time Messaging Backend",
+    desc: "Built real-time messaging backend using WebSockets with JWT authentication and PostgreSQL persistence. Implemented in-memory ConnectionManager handling concurrent WebSocket connections across multiple chat rooms. Added sliding window rate limiter and a browser demo client for live testing.",
+    stack: ["Python", "FastAPI", "WebSockets", "PostgreSQL"],
+    github: "https://github.com/abdulrafay7777/Real-Time-Chat-Connections",
+  },
 ];
 
 export const ACHIEVEMENTS = [
@@ -135,11 +142,11 @@ export const ACHIEVEMENTS = [
 export const SKILLS = [
   {
     label: "Languages",
-    items: ["Python", "JavaScript", "SQL"]
+    items: ["Python", "JavaScript", "HTML/CSS", "SQL"]
   },
   {
     label: "Frameworks & Libraries",
-    items: ["PyTorch", "NumPy", "Pandas", "Matplotlib", "LangChain", "LangGraph", "FastAPI", "React.js"]
+    items: ["FastAPI", "Django", "React.js", "LangChain", "LangGraph", "PyTorch", "NumPy", "Pandas", "Matplotlib", "Scikit-learn"]
   },
   {
     label: "Databases",

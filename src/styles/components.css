@@ -58,6 +58,8 @@
 
 .glass-card:hover {
   border-color: var(--glass-border-hover);
+  box-shadow: 0 10px 30px -10px rgba(94, 234, 212, 0.15);
+  transform: translateY(-4px);
 }
 
 /* ========== TAG ========== */
@@ -79,6 +81,7 @@
   border-color: var(--glass-border-hover);
   color: var(--text);
   background: rgba(255,255,255,0.04);
+  transform: translateY(-2px);
 }
 
 /* ========== SECTION LABEL ========== */

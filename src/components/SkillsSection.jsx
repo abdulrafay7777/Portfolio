@@ -50,7 +50,14 @@ export function SkillsSection() {
             <h3 className="skill-category-label">{category.label}</h3>
             <div className="skill-tags">
               {category.items.map((item) => (
-                <span key={item} className="skill-tag">{item}</span>
+                <motion.span 
+                  key={item} 
+                  className="skill-tag"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  {item}
+                </motion.span>
               ))}
             </div>
           </motion.div>
